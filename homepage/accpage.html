@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  height: 720px;
+  position: relative; 
+}
+
+.oh{
+  width:40px;
+  border-radius: 7%; 
+}
+.hi{
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    color:gray;
+    
+}
+
+.let{
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    color: black;
+    font-weight: bold;
+    font-family: "Lexend", sans-serif;
+    
+}
+
+.prof {
+    position: absolute;
+    left: 370px;
+    top: 110px;
+    height: 80px;
+    width: 90px;
+    border-radius: 50%;
+    font-family: "Lexend", sans-serif;
+
+}
+
+.ws1 {
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    top: 220px;
+    width: 80px;
+    height: 100px;
+    background-color: #cdf5f6;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow:1px 1px 2px black;
+    font-family: "Lexend", sans-serif;
+}
+
+.value1 {
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+.title1 {
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.ws2 {
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 220px;
+    width: 80px;
+    height: 100px;
+    background-color: #cdf5f6;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow:1px 1px 2px black;
+    font-size: 3px;
+    font-family: "Lexend", sans-serif;
+}
+.ws2 p{
+    position: absolute;
+    top:22px;
+}
+
+.value2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.title2 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.ws3 {
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 370px;
+    top: 220px;
+    width: 80px;
+    height: 100px;
+    background-color: #cdf5f6;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow:1px 1px 2px black;
+    font-family: "Lexend", sans-serif;
+    
+}
+
+.value3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.title3 {
+    font-weight: bold;
+    font-size: 15px;
+}
+.set {
+    top: 320px;
+    position: absolute;
+    left: 200px;
+    font-family: "Lexend", sans-serif;
+}
+
+.Account {
+    top: 350px;
+    position: absolute;
+    left:60px;
+    font-family: "Lexend", sans-serif;
+}
+.Actions {
+    top: 135px;
+    position: absolute;
+    left: 20px;
+
+}
+
+.sidebar {
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    top: 390px;
+    left:40px;
+    border: 1px solid #ddd;
+    background-color: #cdf5f6;
+    border-radius: 5px;
+    box-shadow:1px 2px 1px black;
+    font-family: "Lexend", sans-serif;
+}
+
+.sidebar2 {
+    width: 450px;
+    height: 100px;
+    position: absolute;
+    top: 180px;
+    left:0px;
+    border: 1px solid #ddd;
+    background-color: #cdf5f6;
+    border-radius: 5px;
+    box-shadow:1px 2px 1px black;
+    font-family: "Lexend", sans-serif;
+}
+.pic1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 4px;
+    left: 0px;
+}
+.text1 {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    font-family: "Lexend", sans-serif;
+}
+.pic2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 34px;
+    left: 0px;
+}
+.text2 {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    font-family: "Lexend", sans-serif;
+}
+
+.pic3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 64px;
+    left: 0px;
+}
+.text3 {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-family: "Lexend", sans-serif;
+}
+
+.pic4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 90px;
+    left: 0px;
+}
+.text4 {
+    position: absolute;
+    left: 40px;
+    top: 90px;
+    font-family: "Lexend", sans-serif;
+}
+.pic5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 4px;
+    left: 0px;
+}
+.text5 {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    font-family: "Lexend", sans-serif;
+}
+.pic6 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 34px;
+    left: 0px;
+}
+.text6 {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    font-family: "Lexend", sans-serif;
+}
+.pic7 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 64px;
+    left: 0px;
+}
+.text7 {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+.home {
+    position: absolute;
+    right: 9px; 
+    top: 140px;
+    left: 10px;
+    border: none;   
+}
+.homey{
+  font-family: "Lexend", sans-serif;
+  font-size: 12px;
+  position:absolute;
+  top:10px;
+}
+
+.home img {
+    width: 30px; /* Adjusted width */
+    height: auto;
+    border-radius: 10%; /* Keeps aspect ratio */
+}
+.workout {
+    position: absolute;
+    right: 9px; 
+    top: 140px;
+    left: 90px;
+    border: none;   
+}
+.workout img {
+    width: 30px; /* Adjusted width */
+    height: 20px;
+  /* Keeps aspect ratio */
+}
+.workouty{
+  font-family: "Lexend", sans-serif;
+  font-size: 12px;
+  position:absolute;
+  top:10px;
+}
+.growth {
+    position: absolute;
+    right: 9px; 
+    top: 140px;
+    left: 280px;
+    border: none;   
+}
+.growth img {
+    width: 35px; /* Adjusted width */
+    height: 35px;
+    position: absolute;
+    top:-5px;
+  /* Keeps aspect ratio */
+}
+.growthy{
+  font-family: "Lexend", sans-serif;
+  font-size: 12px;
+  position:absolute;
+  top:10px;
+}
+.profile {
+  position: absolute;
+    right: 9px; 
+    top: 140px;
+    left: 380px;
+    border: none; 
+}
+.profile img {
+    width: 30px; /* Adjusted width */
+    height: 20px;
+    
+  /* Keeps aspect ratio */
+}
+.profiley{
+  font-family: "Lexend", sans-serif;
+  font-size: 12px;
+  position:absolute;
+  top:10px;
+}
+.mcircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  margin: 0;
+  position: absolute;
+  top: 80px;
+  left: 130px;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width:50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.text28 {
+  position: absolute;
+  top: -567px;
+  left: 120px;
+  color: rgb(98, 124, 148);
+}
+.nav-box {
+      background-color: #f0f8ff; /* Very light blue color */
+      padding: 10px; /* Adjust padding as needed */
+      border-radius: 10px; /* Rounded corners */
+      margin-bottom: 20px; 
+      width:700px;
+      height:100px;
+      position: absolute;
+      top:130px;
+      left:-100px;
+  /* Adjust margin as needed */
+    }
+
+
+.plus {
+  color: white;
+  font-size: 30px;
+}
+.home :hover,
+.workout :hover,
+.growth :hover,
+.profile :hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+ 
+    
+    <div class="content">
+        <img class="oh" src="logo.jpg">
+        <div class="hi">
+            <h1>Hi,Mila</h1>
+            </div>
+        <div class="let">
+            <p>Let's check your activity</p>
+        </div>
+        <div class="profile1">
+            <a href="prof"><img class="prof" src="women.jpg"></a>
+        </div>
+        <div class="ws1">
+            <div class="value1">16</div>
+            <div class="title1">Completed Workouts</div>
+        </div>
+        <div class="ws2">
+            <div class="value2">7h</div>
+            <div class="title2"><p>Time Spent for Working</p></div>
+        </div>
+        <div class="ws3">
+            <div class="value3">1.4k</div>
+            <div class="title3">Calories Burned</div>
+        </div>
+        <div class="set">
+            <h2>Settings</h2>
+        </div>
+        <div class="Account">
+            <h4 >Account</h4>
+        </div>
+        <div class="sidebar">
+            <p style="display: inline-block;">
+                <img class="pic1" src="flag.png">
+                <div class="text1"><h4>Edit Profile</h4></div>
+            <p style="display: inline-block;">
+                <img class="pic2" src="shield.png">
+                <div class="text2"><h4>Security</h4></div>
+            <p style="display: inline-block;">
+                <img class="pic3" src="lock.png">
+                <div class="text3"><h4>Notification</h4></div>
+            <p style="display: inline-block;">
+                <img class="pic4" src="bell.png">
+                <div class="text4"><h4>Privacy</h4></div>
+        <div class="Actions">
+            <h4>Actions</h4>
+        </div>
+        <div class="sidebar2">
+            <p style="display: inline-block;">
+                <img class="pic5" src="person.png">
+                <div class="text5"><h4>Report a problem</h4></div>
+            <p style="display: inline-block;">
+                <img class="pic6" src="exit.png">
+                <div class="text6"><h4>Add Account</h4></div>
+            <p style="display: inline-block;">
+                <img class="pic7" src="personss.png">
+                <div class="text7"><h4>Log Out</h4></div>
+                <div class="text28">
+                    <h2>Vision Master</h2>
+                  </div>
+                  <div class="nav-box">
+                  </div>
+            <div class="footer">
+          
+                <div class="home">
+                    <a href="index.html">
+                    <img src="home.png">
+                    <p class="homey">Home</p>
+                </a>
+                </div>
+                <div class="workout">
+                    <a href="percentage.html">
+                    <img src="workout.png">
+                    <p class="workouty">Workout</p>
+                </a>
+                </div>
+                <div class="growth">
+                    <a href="progress.html">
+                    <img src="growth.png">
+                    <p class="growthy">Progress</p>
+                </a>
+                </div>
+                <div class="profile">
+                    <a href="accpage.html">
+                    <img src="profile.png">
+                    <p class="profiley">profile</p>
+                </a>
+                </div>
+                <div class="box">
+                    <a href="http://127.0.0.1:7860">
+                <div class="mcircle">
+                    <div class="circle">
+                    <div class="inner-circle">
+                    <div class="plus">+</div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+        </a>
+        </div>
+    </div>
+</body>
+</html>
